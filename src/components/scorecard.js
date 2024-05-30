@@ -4,8 +4,8 @@ import Confetti from 'react-confetti';
 
 const Scorecard = () => {
   const [scores, setScores] = useState([]);
-  const [numPlayers, setNumPlayers] = useState(0);
-  const [numRounds, setNumRounds] = useState(0);
+  const [,setNumPlayers] = useState(0);
+  const [,setNumRounds] = useState(0);
   const [showScorecard, setShowScorecard] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -87,9 +87,8 @@ const Scorecard = () => {
             ))}
           </ul>
           <h3>Overall Winner</h3>
-          <p>{getOverallWinner() }</p>
-          <Confetti/>
-          
+          <p>{getOverallWinner() }</p><Confetti/>
+         
         </>
       )}
     </div>
